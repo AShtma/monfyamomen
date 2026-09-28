@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إنجازات محافظة المنوفية</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#12351f;--green-800:#1a4a2e;--green-700:#2d6a4f;--green-600:#38875f;
+  --green-500:#52b788;--green-300:#a7d9b8;--green-100:#e4f1e8;
+  --nile:#1b4965;--nile-mid:#2a6f97;--nile-light:#8cc0dc;--nile-pale:#e3f0f6;
+  --wheat:#e9c46a;--wheat-dark:#d4a017;--wheat-deep:#a67c00;
+  --cream:#f8f4e9;--cream-2:#ede4d3;--cream-3:#e0d5bd;
+  --text:#1a2b1f;--text-soft:#4a5c50;--white:#fff;
+  --sh-sm:0 2px 8px rgba(26,74,46,.08);
+  --sh:0 6px 24px rgba(26,74,46,.12);
+  --sh-lg:0 16px 48px rgba(26,74,46,.18);
+  --r:18px;--rs:12px;
+  --tr:all .3s cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans Arabic','Segoe UI',sans-serif;background:var(--cream);color:var(--text);line-height:1.75;overflow-x:hidden}
+h1,h2,h3,h4,h5,button,.tab,.acc-badge,.lstat .n,.sc-stat{font-family:'Cairo','Segoe UI',sans-serif}
+a{text-decoration:none;color:inherit;cursor:pointer}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ============ LANDING ============ */
+#landing{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at 15% 25%,rgba(82,183,136,.35),transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(233,196,106,.28),transparent 55%),radial-gradient(ellipse at 50% 95%,rgba(27,73,101,.4),transparent 60%),linear-gradient(160deg,#0d2517,#1a4a2e 45%,#1b4965);
+  overflow-y:auto;padding:20px;transition:opacity .8s,transform .8s}
+#landing.hide{opacity:0;transform:scale(1.08);pointer-events:none}
+.land-in{position:relative;z-index:1;width:100%;max-width:880px;background:rgba(248,244,233,.06);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(233,196,106,.28);border-radius:28px;padding:50px 45px;text-align:center;box-shadow:0 24px 70px rgba(0,0,0,.4);animation:landIn 1s ease-out;margin:auto}
+@keyframes landIn{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+.land-logo{width:120px;height:120px;margin:0 auto 22px;background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:56px;color:var(--green-900);box-shadow:0 12px 40px rgba(233,196,106,.45);animation:lpulse 3.5s ease-in-out infinite;position:relative}
+.land-logo::after{content:'';position:absolute;inset:-8px;border:2px dashed rgba(233,196,106,.5);border-radius:50%;animation:spin 20s linear infinite}
+@keyframes lpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.land-h1{font-size:2.7rem;font-weight:900;color:var(--wheat);margin-bottom:10px;line-height:1.25;text-shadow:0 3px 24px rgba(233,196,106,.35)}
+.land-h2{font-size:1.15rem;font-weight:400;letter-spacing:2px;color:rgba(248,244,233,.72);margin-bottom:22px}
+.land-sep{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px 0}
+.land-sep span{width:70px;height:2px;background:linear-gradient(90deg,transparent,var(--wheat),transparent)}
+.land-sep i{color:var(--wheat)}
+.land-desc{font-size:1.05rem;line-height:1.95;color:rgba(248,244,233,.9);max-width:660px;margin:0 auto 28px}
+.land-stats{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin:28px 0}
+.lstat{display:flex;flex-direction:column;align-items:center;min-width:90px}
+.lstat .n{font-size:2rem;font-weight:900;color:var(--wheat);line-height:1}
+.lstat .t{font-size:.8rem;color:rgba(248,244,233,.7);margin-top:6px}
+.enter-btn{display:inline-flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);padding:17px 50px;font-size:1.15rem;font-weight:800;border-radius:50px;position:relative;overflow:hidden;box-shadow:0 10px 35px rgba(233,196,106,.45);transition:var(--tr);margin-top:8px}
+.enter-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);transition:left .6s}
+.enter-btn:hover::before{left:100%}
+.enter-btn:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(233,196,106,.6)}
+.enter-btn i{transition:var(--tr)}
+.enter-btn:hover i{transform:translateX(-6px)}
+.land-foot{margin-top:26px;padding-top:20px;border-top:1px solid rgba(248,244,233,.12);font-size:.85rem;color:rgba(248,244,233,.55)}
+.land-foot .yr{color:var(--wheat);font-weight:700;margin-top:4px}
+
+/* SIDE LOGOS */
+.side-logo{position:absolute;top:50%;transform:translateY(-50%);width:300px;height:300px;z-index:2;pointer-events:none;filter:drop-shadow(0 12px 40px rgba(233,196,106,.55));animation:floatLogo 4s ease-in-out infinite}
+.side-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:#fff;border:5px solid var(--wheat)}
+.side-logo::before{content:'';position:absolute;inset:-30px;border-radius:50%;background:radial-gradient(circle,rgba(233,196,106,.4) 0%,transparent 65%);animation:pulseHalo 3s ease-in-out infinite;z-index:-1}
+.side-logo::after{content:'';position:absolute;inset:-15px;border:2px dashed rgba(233,196,106,.6);border-radius:50%;animation:spinSlow 25s linear infinite}
+.side-logo.left-logo{left:3%}
+.side-logo.right-logo{right:3%;animation-name:floatLogoRight}
+.side-logo.right-logo::after{animation-direction:reverse}
+@keyframes floatLogo{0%,100%{transform:translateY(-50%) translateX(0)}50%{transform:translateY(-56%) translateX(8px)}}
+@keyframes floatLogoRight{0%,100%{transform:translateY(-50%) translateX(0)}50%{transform:translateY(-56%) translateX(-8px)}}
+@keyframes pulseHalo{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.15);opacity:1}}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+@media(max-width:1300px){.side-logo{width:230px;height:230px}}
+@media(max-width:1050px){.side-logo{width:170px;height:170px;opacity:.9}}
+@media(max-width:850px){.side-logo.left-logo,.side-logo.right-logo{display:none}}
+
+/* ============ APP — الخلفية الثابتة ============ */
+#app{
+  display:none;
+  min-height:100vh;
+  background: linear-gradient(rgba(245, 243, 243, 0.945), rgba(250, 249, 249, 0.356)), url('images/الخلفية.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+#app.show{display:block}
+.topnav{position:sticky;top:0;z-index:9000;background:linear-gradient(180deg,var(--green-800),var(--green-900));border-bottom:3px solid var(--wheat);box-shadow:0 4px 20px rgba(0,0,0,.15)}
+.topnav-in{max-width:1400px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--wheat);font-weight:800;font-size:1.1rem;flex-shrink:0;cursor:pointer}
+.brand .bm{width:42px;height:42px;flex-shrink:0;background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 3px 12px rgba(233,196,106,.4)}
+.tabs{display:flex;gap:6px;flex:1;overflow-x:auto;padding:3px 0}
+.tabs::-webkit-scrollbar{height:4px}
+.tabs::-webkit-scrollbar-thumb{background:var(--wheat);border-radius:4px}
+.tab{padding:10px 18px;border-radius:10px;background:rgba(248,244,233,.08);color:rgba(248,244,233,.85);font-size:.88rem;font-weight:700;white-space:nowrap;transition:var(--tr);border:1.5px solid rgba(233,196,106,.2);display:flex;align-items:center;gap:7px}
+.tab:hover{background:rgba(233,196,106,.18);color:var(--wheat);border-color:rgba(233,196,106,.4);transform:translateY(-1px)}
+.tab.active{background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);border-color:var(--wheat-deep);box-shadow:0 3px 12px rgba(233,196,106,.4)}
+@media(max-width:1050px){.topnav-in{flex-wrap:wrap;padding:8px 12px}.brand{font-size:1rem}.tabs{order:3;width:100%;flex:1 1 100%}}
+@media(max-width:600px){.brand .bm{width:36px;height:36px;font-size:17px}.tab{padding:7px 12px;font-size:.78rem}.tab i{display:none}}
+
+/* VIEWS */
+.view{display:none;animation:vIn .55s ease}
+.view.active{display:block}
+@keyframes vIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page-hero{position:relative;background:linear-gradient(135deg,rgba(45,106,79,.95),rgba(26,74,46,.95)),repeating-linear-gradient(45deg,rgba(233,196,106,.04) 0 10px,transparent 10px 20px);color:var(--cream);padding:55px 20px 45px;text-align:center;overflow:hidden;border-bottom:5px solid var(--wheat)}
+.page-hero::before{content:'';position:absolute;top:-60px;inset-inline-end:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(233,196,106,.25),transparent 70%)}
+.page-hero::after{content:'';position:absolute;bottom:-70px;inset-inline-start:-50px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(27,73,101,.4),transparent 70%)}
+.ph-in{position:relative;z-index:1;max-width:900px;margin:0 auto}
+.ph-ic{width:80px;height:80px;margin:0 auto 18px;background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:34px;box-shadow:0 10px 30px rgba(233,196,106,.4)}
+.page-hero h1{font-size:2.2rem;font-weight:900;color:var(--wheat);margin-bottom:12px;line-height:1.3}
+.page-hero p{font-size:1.05rem;color:rgba(248,244,233,.9);max-width:780px;margin:0 auto}
+.section{max-width:1300px;margin:0 auto;padding:55px 20px}
+.sec-head{text-align:center;margin-bottom:38px}
+.sec-head h2{font-size:1.7rem;font-weight:900;color:var(--green-800);display:inline-block;position:relative;padding-bottom:12px}
+.sec-head h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:70px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--wheat),var(--wheat-dark))}
+.sec-head p{color:var(--text-soft);max-width:780px;margin:14px auto 0;font-size:1rem}
+
+/* ============ تخطيط الفيديو + القطاعات ============ */
+.media-section{padding:14px 20px 0 !important;margin-bottom:0 !important;}
+.media-layout{
+  display:grid;
+  grid-template-columns: 1fr minmax(380px, 520px);
+  gap:20px;
+  align-items:start;
+  max-width:1180px;
+  margin:0 auto;
+}
+.media-side{
+  grid-column:1;
+  grid-row:1;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.media-video{
+  grid-column:2;
+  grid-row:1;
+}
+
+#view-home{padding-bottom:0;margin-bottom:0}
+
+/* ====== الإحصائيات الرأسية ====== */
+.stat-item{
+  background:linear-gradient(135deg,var(--green-800),var(--green-900));
+  border:1px solid rgba(233,196,106,.35);
+  border-radius:12px;
+  padding:11px 16px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  box-shadow:var(--sh-sm);
+  transition:var(--tr);
+  position:relative;
+  overflow:hidden;
+}
+.stat-item::before{
+  content:'';position:absolute;inset-inline-start:0;top:0;bottom:0;
+  width:4px;background:linear-gradient(180deg,var(--wheat),var(--wheat-dark));
+}
+.stat-item:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:var(--wheat)}
+.stat-item .n{
+  font-size:1.35rem;font-weight:900;color:var(--wheat);
+  font-family:'Cairo',sans-serif;min-width:72px;text-align:center;line-height:1.1;
+}
+.stat-item .t{font-size:.9rem;color:rgba(248,244,233,.9);line-height:1.45;font-weight:500}
+
+/* ============ VIDEO (طولي / بورتريه) ============ */
+.video-wrap{
+  position:relative;
+  width:100%;
+  aspect-ratio:3/4;
+}
+.video-hero{
+  position:absolute;
+  inset:0;
+  border-radius:20px;
+  overflow:hidden;
+  background:#000;
+  border:4px solid var(--green-800);
+  box-shadow:0 20px 60px rgba(26,74,46,.35);
+}
+.video-hero iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
+@media(max-width:950px){
+  .media-layout{grid-template-columns:1fr;gap:22px}
+  .media-side{grid-column:1;grid-row:2}
+  .media-video{grid-column:1;grid-row:1;max-width:380px;margin:0 auto;width:100%}
+}
+
+/* ============ SECTOR CARDS ============ */
+.sector-card{
+  background:var(--white);
+  border:1px solid var(--cream-3);
+  border-radius:14px;
+  padding:14px 15px;
+  cursor:pointer;
+  transition:var(--tr);
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--sh-sm);
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:12px;
+  min-height:86px;
+}
+.sector-card::before{
+  content:'';position:absolute;inset-inline-start:0;top:0;bottom:0;
+  width:4px;background:linear-gradient(180deg,var(--green-600),var(--green-800));
+  transform:scaleY(0);transform-origin:top;transition:transform .4s;
+}
+.sector-card:hover::before{transform:scaleY(1)}
+.sector-card:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--green-500)}
+.sc-ic{
+  width:50px;height:50px;flex-shrink:0;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;
+  background:linear-gradient(135deg,var(--green-100),var(--green-300));
+  color:var(--green-800);
+  box-shadow:0 4px 14px rgba(45,106,79,.15);
+  transition:var(--tr);
+}
+.sector-card:hover .sc-ic{background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);transform:scale(1.08) rotate(-4deg)}
+.sc-body{flex:1;min-width:0}
+.sc-body h3{font-size:1.02rem;font-weight:800;color:var(--green-800);margin-bottom:3px;line-height:1.3}
+.sc-body p{color:var(--text-soft);font-size:.78rem;line-height:1.55;margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.sc-stat{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--nile-pale);color:var(--nile);
+  padding:5px 10px;border-radius:16px;
+  font-size:.7rem;font-weight:700;
+  border:1px solid var(--nile-light);
+  white-space:nowrap;flex-shrink:0;
+}
+.sc-arrow{color:var(--green-500);font-size:1.05rem;transition:var(--tr);flex-shrink:0;position:static}
+.sector-card:hover .sc-arrow{color:var(--wheat-dark)}
+[dir="rtl"] .sector-card:hover .sc-arrow{transform:translateX(-5px)}
+[dir="ltr"] .sector-card:hover .sc-arrow{transform:translateX(5px)}
+
+@media(max-width:600px){
+  .sector-card{flex-wrap:wrap;gap:10px;padding:13px;min-height:auto}
+  .sc-ic{width:42px;height:42px;font-size:1.1rem;border-radius:12px}
+  .sc-body h3{font-size:.94rem}
+  .sc-body p{font-size:.74rem}
+  .sc-stat{font-size:.66rem;padding:4px 8px}
+  .sc-arrow{display:none}
+  .stat-item{padding:9px 12px}
+  .stat-item .n{font-size:1.1rem;min-width:60px}
+  .stat-item .t{font-size:.78rem}
+}
+
+/* ===== HOME HERO — مكبّر مع شعارات واضحة ===== */
+.home-hero{
+  position:relative;
+  background:linear-gradient(135deg,#1a4a2e,#12351f 60%,#1b4965);
+  color:var(--cream);
+  padding:30px 165px 30px;
+  text-align:center;
+  overflow:hidden;
+  border-bottom:5px solid var(--wheat);
+  min-height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.home-hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 20% 30%,rgba(82,183,136,.3),transparent 45%),radial-gradient(circle at 80% 70%,rgba(233,196,106,.22),transparent 45%);
+  pointer-events:none;
+}
+.hh-in{position:relative;z-index:2;max-width:1000px;margin:0 auto}
+
+.hero-logo{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:110px;
+  height:110px;
+  z-index:3;
+  border-radius:50%;
+  background:#fff;
+  border:4px solid var(--wheat);
+  box-shadow:0 8px 26px rgba(0,0,0,.45),0 0 0 6px rgba(233,196,106,.25);
+  object-fit:contain;
+  padding:5px;
+  transition:var(--tr);
+  animation:logoFloat 4s ease-in-out infinite;
+}
+.hero-logo:hover{transform:translateY(-50%) scale(1.08);box-shadow:0 12px 32px rgba(233,196,106,.65),0 0 0 9px rgba(233,196,106,.3)}
+.hero-logo-right{right:22px}
+.hero-logo-left{left:22px;animation-delay:1s}
+@keyframes logoFloat{
+  0%,100%{transform:translateY(-50%)}
+  50%{transform:translateY(-58%)}
+}
+
+.home-hero h1{font-size:1.9rem;font-weight:900;color:var(--wheat);margin-bottom:10px;line-height:1.3;text-shadow:0 3px 16px rgba(233,196,106,.4)}
+.hh-sub{font-size:1rem;color:rgba(248,244,233,.92);max-width:780px;margin:0 auto;line-height:1.65}
+
+@media(max-width:900px){
+  .home-hero{padding:22px 120px;min-height:150px}
+  .hero-logo{width:82px;height:82px;padding:4px;border-width:3px}
+  .hero-logo-right{right:12px}
+  .hero-logo-left{left:12px}
+  .home-hero h1{font-size:1.45rem}
+  .hh-sub{font-size:.85rem}
+}
+@media(max-width:640px){
+  .home-hero{padding:18px 88px;min-height:120px}
+  .hero-logo{width:62px;height:62px;padding:3px;border-width:2px}
+  .hero-logo-right{right:8px}
+  .hero-logo-left{left:8px}
+  .home-hero h1{font-size:1.1rem}
+  .hh-sub{font-size:.72rem}
+}
+@media(max-width:420px){
+  .home-hero{padding:14px 72px;min-height:100px}
+  .hero-logo{width:50px;height:50px}
+  .hero-logo-right{right:5px}
+  .hero-logo-left{left:5px}
+  .home-hero h1{font-size:.92rem}
+  .hh-sub{font-size:.62rem}
+}
+
+/* SECTOR INTRO */
+.sector-intro{background:linear-gradient(135deg,var(--green-100),var(--cream));border:2px solid var(--green-300);border-radius:var(--r);padding:30px 32px;margin-bottom:35px;position:relative;overflow:hidden}
+.sector-intro::before{content:'';position:absolute;top:0;inset-inline-start:0;width:6px;height:100%;background:linear-gradient(180deg,var(--wheat),var(--green-700))}
+.sector-intro h3{font-size:1.3rem;color:var(--green-800);margin-bottom:14px;display:flex;align-items:center;gap:10px;font-weight:900}
+.sector-intro h3 i{color:var(--wheat-dark);font-size:1.4rem}
+.sector-intro p{color:var(--text);font-size:1rem;line-height:1.95;margin-bottom:12px}
+.sector-intro p:last-child{margin-bottom:0}
+.intro-stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.intro-stat{background:var(--white);border:1.5px solid var(--green-300);border-radius:12px;padding:10px 16px;font-size:.85rem;font-weight:700;color:var(--green-800);display:inline-flex;align-items:center;gap:8px}
+.intro-stat i{color:var(--wheat-dark)}
+
+/* ACCORDION */
+.accordions{display:flex;flex-direction:column;gap:14px}
+.acc{background:var(--white);border:1.5px solid var(--cream-3);border-radius:var(--r);overflow:hidden;transition:var(--tr);box-shadow:var(--sh-sm)}
+.acc:hover{border-color:var(--green-500);box-shadow:var(--sh)}
+.acc.open{border-color:var(--wheat-dark);box-shadow:var(--sh-lg)}
+.acc-head{padding:22px 26px;display:flex;align-items:center;gap:18px;cursor:pointer;transition:var(--tr)}
+.acc-head:hover{background:linear-gradient(135deg,var(--green-100),transparent)}
+.acc.open .acc-head{background:linear-gradient(135deg,var(--green-100),var(--cream));border-bottom:2px solid var(--wheat)}
+.acc-ic{width:56px;height:56px;flex-shrink:0;border-radius:16px;background:linear-gradient(135deg,var(--green-100),var(--green-300));color:var(--green-800);display:flex;align-items:center;justify-content:center;font-size:1.45rem;transition:var(--tr)}
+.acc.open .acc-ic{background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);transform:rotate(-5deg)}
+.acc-title{flex:1;min-width:0}
+.acc-title h3{font-size:1.15rem;font-weight:800;color:var(--green-800);margin-bottom:5px}
+.acc-title p{color:var(--text-soft);font-size:.88rem;line-height:1.6;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.acc.open .acc-title p{display:none}
+.acc-badge{background:var(--nile-pale);color:var(--nile);padding:6px 14px;border-radius:20px;font-size:.78rem;font-weight:700;border:1px solid var(--nile-light);white-space:nowrap}
+.acc-chev{width:36px;height:36px;flex-shrink:0;border-radius:50%;background:var(--cream-2);color:var(--green-700);display:flex;align-items:center;justify-content:center;transition:var(--tr);font-size:.9rem}
+.acc.open .acc-chev{background:var(--wheat);color:var(--green-900);transform:rotate(180deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .6s ease}
+.acc.open .acc-body{max-height:9000px}
+.acc-content{padding:0 26px 26px;animation:fadeUp .5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.acc-block{margin-top:24px}
+.acc-block:first-child{margin-top:0}
+.acc-block h4{font-size:1rem;font-weight:800;color:var(--green-800);margin-bottom:14px;display:flex;align-items:center;gap:10px;padding-bottom:10px;border-bottom:2px dashed var(--cream-3)}
+.acc-block h4 i{color:var(--wheat-dark);font-size:1.1rem}
+.acc-block p{color:var(--text);font-size:.96rem;line-height:2;margin-bottom:12px}
+.acc-block ul{list-style:none;padding:0;margin:12px 0}
+.acc-block ul li{position:relative;padding-inline-start:26px;margin-bottom:10px;font-size:.95rem;line-height:1.85;color:var(--text)}
+.acc-block ul li::before{content:'\f00c';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;inset-inline-start:0;top:2px;color:var(--green-600);font-size:.85rem}
+
+/* INFO BOX */
+.info-box{background:linear-gradient(135deg,var(--nile-pale),#fff);border:1.5px solid var(--nile-light);border-inline-start:6px solid var(--nile);border-radius:12px;padding:16px 20px;margin:14px 0}
+.info-box p{margin:0;color:var(--nile);font-size:.95rem;line-height:1.9}
+.info-box strong{color:var(--green-800)}
+
+/* MINI GALLERY */
+.mini-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.mini-img{aspect-ratio:4/3;border-radius:var(--rs);overflow:hidden;position:relative;background:linear-gradient(135deg,var(--green-700),var(--nile));display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr);box-shadow:var(--sh-sm)}
+.mini-img:hover{transform:scale(1.04);box-shadow:var(--sh);filter:brightness(1.1)}
+.mini-img i{font-size:2.6rem;color:rgba(248,244,233,.5)}
+.mini-img>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.mini-img::after{content:attr(data-cap);position:absolute;bottom:0;inset-inline:0;padding:22px 10px 8px;background:linear-gradient(transparent,rgba(18,53,31,.9));color:var(--cream);font-size:.78rem;font-weight:700;text-align:center;z-index:2}
+
+/* FOOTER — مصغّر جداً */
+.footer{
+  background:linear-gradient(180deg,var(--green-900),#0d2517);
+  color:var(--cream);
+  padding:8px 20px 6px;
+  text-align:center;
+  margin-top:0;
+  border-top:3px solid var(--wheat);
+  line-height:1.35;
+}
+.footer .ft-t{color:var(--wheat);font-weight:800;font-size:.75rem;margin-bottom:2px;line-height:1.3}
+.footer p{font-size:.6rem;color:rgba(248,244,233,.68);margin-bottom:1px;line-height:1.35}
+.footer .copy{margin-top:4px;padding-top:4px;border-top:1px solid rgba(233,196,106,.15);font-size:.55rem;color:rgba(248,244,233,.5);line-height:1.3}
+
+.scroll-top{position:fixed;bottom:22px;inset-inline-end:22px;width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--wheat),var(--wheat-dark));color:var(--green-900);font-size:1.2rem;box-shadow:0 8px 24px rgba(233,196,106,.5);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:var(--tr);z-index:8000}
+.scroll-top.show{opacity:1;pointer-events:auto}
+.scroll-top:hover{transform:translateY(-4px)}
+
+@media(max-width:768px){
+  .land-in{padding:36px 22px}.land-h1{font-size:1.75rem}.land-h2{font-size:.95rem}.land-desc{font-size:.92rem}
+  .land-stats{gap:16px}.lstat{min-width:70px}.lstat .n{font-size:1.5rem}
+  .enter-btn{padding:14px 34px;font-size:1rem;width:100%;justify-content:center}
+  .page-hero h1{font-size:1.5rem}.page-hero p{font-size:.9rem}
+  .page-hero{padding:40px 16px 32px}
+  .media-section{padding:10px 16px 0 !important}
+  .section{padding:40px 16px}
+  .sec-head h2{font-size:1.35rem}
+  .acc-head{padding:16px;gap:12px;flex-wrap:wrap}.acc-ic{width:46px;height:46px;font-size:1.15rem;border-radius:12px}
+  .acc-title h3{font-size:1rem}.acc-title p{font-size:.82rem}
+  .acc-badge{order:3;font-size:.7rem;padding:4px 10px}.acc-chev{width:30px;height:30px;font-size:.8rem}
+  .acc-content{padding:0 16px 20px}.acc-block p{font-size:.9rem}
+  .sector-intro{padding:22px 20px}
+  .sector-intro h3{font-size:1.1rem}
+  .footer{padding:6px 14px 4px}
+  .footer .ft-t{font-size:.7rem}
+  .footer p{font-size:.55rem}
+  .footer .copy{font-size:.5rem;margin-top:3px;padding-top:3px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ LANDING ============ -->
+<div id="landing">
+  <div class="side-logo left-logo"><img src="images/لوجو المدرية.jpg" alt="مديرية التربية والتعليم بالمنوفية"></div>
+  <div class="side-logo right-logo"><img src="images/download.jpg" alt="وزارة التربية والتعليم"></div>
+  <div class="land-in">
+    <div class="land-logo"><i class="fas fa-wheat-awn"></i></div>
+    <h1 class="land-h1">إنجازات محافظة المنوفية</h1>
+    <h2 class="land-h2">Menoufia Governorate Achievements</h2>
+    <div class="land-sep"><span></span><i class="fas fa-star"></i><span></span></div>
+    <p class="land-desc">رحلة عبر إنجازات الجمهورية الجديدة في قلب الدلتا — 40 مليار جنيه استثمارات، 1609 مشروعاً، 81 قرية، ومليون و200 ألف مواطن مستفيد</p>
+    <div class="land-stats">
+      <div class="lstat"><span class="n">40</span><span class="t">مليار جنيه</span></div>
+      <div class="lstat"><span class="n">1609</span><span class="t">مشروع</span></div>
+      <div class="lstat"><span class="n">81</span><span class="t">قرية</span></div>
+      <div class="lstat"><span class="n">1.2</span><span class="t">مليون مواطن</span></div>
+    </div>
+    <button class="enter-btn" onclick="enterSite()"><span>دخول الموقع</span><i class="fas fa-arrow-left"></i></button>
+    <div class="land-foot">
+      <p class="yr">إعداد: مـــؤمـــن عــلاء الـديـن سـلـيــم </p>
+      <p > الصف الثاني الاعدادي -مدرسة ميت مسعود الاعدادية  </p>
+      <p class="yr">شبين الكوم - محافظة المنوفية </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ APP ============ -->
+<div id="app">
+  <nav class="topnav"><div class="topnav-in">
+    <div class="brand" onclick="showView('home')"><div class="bm"><i class="fas fa-wheat-awn"></i></div><span>المنوفية</span></div>
+    <div class="tabs" id="mainTabs">
+      <button class="tab active" data-view="home" onclick="showView('home')"><i class="fas fa-home"></i><span>الرئيسية</span></button>
+      <button class="tab" data-view="education" onclick="showView('education')"><i class="fas fa-graduation-cap"></i><span>التعليم</span></button>
+      <button class="tab" data-view="health" onclick="showView('health')"><i class="fas fa-heart-pulse"></i><span>الصحة</span></button>
+      <button class="tab" data-view="water" onclick="showView('water')"><i class="fas fa-droplet"></i><span>المياه والصرف</span></button>
+      <button class="tab" data-view="roads" onclick="showView('roads')"><i class="fas fa-road"></i><span>الطرق</span></button>
+      <button class="tab" data-view="agri" onclick="showView('agri')"><i class="fas fa-seedling"></i><span>الزراعة</span></button>
+    </div>
+  </div></nav>
+
+  <!-- ===================== HOME ===================== -->
+  <section class="view active" id="view-home">
+
+    <div class="home-hero">
+      <img src="images/download.jpg" class="hero-logo hero-logo-right" alt="وزارة التربية والتعليم">
+      <img src="images/لوجو المدرية.jpg" class="hero-logo hero-logo-left" alt="مديرية التربية والتعليم بالمنوفية">
+      <div class="hh-in">
+        <h1>المنوفية في قلب الجمهورية </h1>
+        <p class="hh-sub">ست سنوات من الإنجاز المتواصل (2019-2025): 40 مليار جنيه استثمارات، 1609 مشروعاً في 81 قرية</p>
+      </div>
+    </div>
+
+    <div class="section media-section">
+      <div class="media-layout">
+
+        <div class="media-side">
+          <div class="stat-item"><span class="n">40</span><span class="t">مليار جنيه إجمالي الاستثمارات</span></div>
+          <div class="stat-item"><span class="n">270</span><span class="t">مليار جنيه مشروعات منفذة</span></div>
+          <div class="stat-item"><span class="n">130</span><span class="t">مليار جنيه مشروعات جارية</span></div>
+          <div class="stat-item"><span class="n">93.6%</span><span class="t">نسبة التنفيذ الكلية</span></div>
+
+          <div class="sector-card" onclick="showView('education')">
+            <div class="sc-ic"><i class="fas fa-graduation-cap"></i></div>
+            <div class="sc-body"><h3>قطاع التعليم</h3><p>نهضة تعليمية شاملة — بناء وتطوير المدارس وإضافة الفصول الدراسية</p></div>
+            <span class="sc-stat"><i class="fas fa-coins"></i> 15 مليار</span>
+            <i class="fas fa-arrow-left sc-arrow"></i>
+          </div>
+
+          <div class="sector-card" onclick="showView('health')">
+            <div class="sc-ic"><i class="fas fa-heart-pulse"></i></div>
+            <div class="sc-body"><h3>قطاع الصحة</h3><p>مستشفيات جديدة ومبادرات رئاسية للرعاية الصحية الشاملة</p></div>
+            <span class="sc-stat"><i class="fas fa-coins"></i> +5 مليار</span>
+            <i class="fas fa-arrow-left sc-arrow"></i>
+          </div>
+
+          <div class="sector-card" onclick="showView('water')">
+            <div class="sc-ic"><i class="fas fa-droplet"></i></div>
+            <div class="sc-body"><h3>قطاع المياه والصرف</h3><p>تغطية شاملة لخدمات مياه الشرب والصرف الصحي</p></div>
+            <span class="sc-stat"><i class="fas fa-coins"></i> 5.7 مليار</span>
+            <i class="fas fa-arrow-left sc-arrow"></i>
+          </div>
+
+          <div class="sector-card" onclick="showView('roads')">
+            <div class="sc-ic"><i class="fas fa-road"></i></div>
+            <div class="sc-body"><h3>قطاع الطرق والنقل</h3><p>محاور مرورية جديدة وكباري وتطوير شبكة الطرق</p></div>
+            <span class="sc-stat"><i class="fas fa-coins"></i> 2 مليار</span>
+            <i class="fas fa-arrow-left sc-arrow"></i>
+          </div>
+
+          <div class="sector-card" onclick="showView('agri')">
+            <div class="sc-ic"><i class="fas fa-seedling"></i></div>
+            <div class="sc-body"><h3>قطاع الزراعة</h3><p>المركز الأول جمهورياً في إنتاجية القمح 2025/2026</p></div>
+            <span class="sc-stat"><i class="fas fa-trophy"></i> الأولى</span>
+            <i class="fas fa-arrow-left sc-arrow"></i>
+          </div>
+        </div>
+
+        <div class="media-video">
+          <div class="video-wrap">
+            <div class="video-hero" id="videoHero">
+  <!-- غيري "اسم_الفيديو.mp4" إلى الاسم الحقيقي للفيديو الموجود عندك في مجلد images -->
+  <video controls autoplay muted loop style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+    <source src="images/vedio.mp4" type="video/mp4">
+    متصفحك لا يدعم تشغيل الفيديو.
+  </video>
+</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="view" id="view-education">
+    <div class="page-hero"><div class="ph-in">
+      <div class="ph-ic"><i class="fas fa-graduation-cap"></i></div>
+      <h1>قطاع التعليم</h1>
+      <p>15 مليار جنيه استثمارات — أكثر من 800 مدرسة، و14 ألف فصل دراسي جديد</p>
+    </div></div>
+
+    <div class="section">
+      <div class="sector-intro">
+        <h3><i class="fas fa-info-circle"></i> نبذة تفصيلية عن القطاع</h3>
+        <p>شهد قطاع التعليم قبل الجامعي في محافظة المنوفية خلال الفترة من 2019 إلى 2025 طفرة تنموية غير مسبوقة، ضمن خطة الدولة المصرية لتطوير منظومة التعليم وتحقيق أهداف رؤية مصر 2030. بلغ إجمالي الاستثمارات الموجهة للبنية التحتية التعليمية بالمحافظة أكثر من 15 مليار جنيه، شملت إنشاء مدارس جديدة بالكامل، وتطوير وتوسعة المدارس القائمة، وإضافة آلاف الفصول الدراسية، وتجهيز المعامل والورش والملاعب، والتحول الرقمي الشامل، وتدريب المعلمين، والاهتمام بالأنشطة الطلابية والتربوية والرياضية.</p>
+        <p>وقد أسهمت هذه المشروعات في القضاء شبه التام على مشكلة الكثافة الطلابية التي كانت تعاني منها مدارس المحافظة لسنوات طويلة، ورفع جودة العملية التعليمية، وتحسين المؤشرات التعليمية، وتوفير بيئة تعليمية آمنة وجاذبة ومحفزة لجميع الطلاب في الحضر والريف على حد سواء، بما يضمن تكافؤ الفرص التعليمية لأبناء المحافظة.</p>
+        <div class="intro-stats">
+          <span class="intro-stat"><i class="fas fa-school"></i> 800+ مدرسة</span>
+          <span class="intro-stat"><i class="fas fa-door-open"></i> 14 ألف فصل</span>
+          <span class="intro-stat"><i class="fas fa-laptop"></i> معامل ذكية</span>
+          <span class="intro-stat"><i class="fas fa-coins"></i> 15 مليار جنيه</span>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>اضغط على أي إنجاز لعرض تفاصيله</h2></div>
+      <div class="accordions">
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-school"></i></div>
+            <div class="acc-title"><h3>بناء وتطوير المدارس</h3><p>إنشاء مئات المدارس الجديدة وتطوير القائم منها بأحدث الوسائل</p></div>
+            <span class="acc-badge">800+ مدرسة</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>استثمارات ضخمة في البنية التحتية التعليمية بمحافظة المنوفية، شملت إنشاء مئات المدارس الجديدة في مختلف المراكز والمدن والقرى (شبين الكوم، منوف، أشمون، الباجور، قويسنا، بركة السبع، تلا، الشهداء، السادات)، وتطوير وتوسعة المدارس القائمة، مع تجهيزها بأحدث الفصول الذكية والمعامل العلمية ومعامل الحاسب الآلي والمكتبات والملاعب الرياضية والمرافق الخدمية.</p>
+              <p>يهدف المشروع إلى القضاء على الكثافة الطلابية وتوفير بيئة تعليمية آمنة ومحفزة للطلاب في جميع أنحاء المحافظة، ضمن المبادرة الرئاسية "حياة كريمة" ومشروع تطوير الريف المصري.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>بناء 300 مدرسة جديدة بالكامل في مختلف مراكز المحافظة.</li>
+                <li>تطوير وتوسعة 500 مدرسة قائمة بإضافة فصول جديدة.</li>
+                <li>تجهيز جميع المدارس بالمعامل العلمية ومعامل الحاسب الآلي.</li>
+                <li>إنشاء ملاعب رياضية وساحات وقاعات للأنشطة الطلابية.</li>
+                <li>توفير بيئة آمنة بأنظمة إطفاء الحريق ومخارج الطوارئ.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="فصل دراسي حديث"><i class="fas fa-chalkboard"></i><img src="images/بفصول دراسية جديدة.jpg" alt="فصل دراسي حديث"></div>
+                <div class="mini-img" data-cap="زيارة الرئيس للمدارس"><i class="fas fa-user-tie"></i><img src="images/بمدرسة دناصور الاعدادية الجديدة.jpg" alt="زيارة الرئيس للمدارس"></div>
+                <div class="mini-img" data-cap="مدرسة حديثة"><i class="fas fa-school"></i><img src="images/بمبنى مدرسة جديد.jpg" alt="مدرسة حديثة"></div>
+                <div class="mini-img" data-cap="صحة الطلاب"><i class="fas fa-heart-pulse"></i><img src="images/حملة 100مليون صحة.jpg" alt="صحة الطلاب"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="acc-title"><h3>الفصول الدراسية</h3><p>إضافة آلاف الفصول الدراسية الجديدة للقضاء على الكثافة الطلابية</p></div>
+            <span class="acc-badge">14 ألف فصل</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>تمت إضافة ما يقرب من 14 ألف فصل دراسي جديد في مدارس محافظة المنوفية بهدف القضاء على مشكلة الكثافة الطلابية في الفصول، وتحسين بيئة التعلم، وتوفير مساحات كافية لكل طالب. شملت الخطة بناء فصول جديدة داخل المدارس القائمة، وتعلية الأدوار في بعض المدارس، وإنشاء مدارس جديدة بالكامل في المناطق ذات الكثافة السكانية العالية.</p>
+              <p>تم تجهيز الفصول بأحدث المقاعد المريحة والسبورات الذكية وأنظمة التكييف والإضاءة المناسبة، لضمان بيئة تعليمية مثالية للطلاب.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>إضافة 14,000 فصل دراسي جديد على مستوى المحافظة.</li>
+                <li>تخفيض الكثافة الطلابية من 60 طالب إلى 35 طالب في الفصل.</li>
+                <li>تجهيز الفصول بأحدث المقاعد المدرسية المريحة.</li>
+                <li>تركيب سبورات ذكية وأنظمة إضاءة وتكييف حديثة.</li>
+                <li>تعلية الأدوار في 120 مدرسة قائمة لتوفير فصول إضافية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="فصول دراسية جديدة"><i class="fas fa-chalkboard-user"></i><img src="images/بفصول دراسية جديدة.jpg" alt="فصول دراسية جديدة"></div>
+                <div class="mini-img" data-cap="فصل ذكي متطور"><i class="fas fa-chair"></i><img src="images/بسروات ذكية.jpg" alt="فصل ذكي متطور"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-laptop-code"></i></div>
+            <div class="acc-title"><h3>التحول الرقمي</h3><p>تجهيز المدارس بالمعامل الذكية وشبكات الإنترنت وتدريب المعلمين</p></div>
+            <span class="acc-badge">100% تغطية</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>شهد قطاع التعليم في المنوفية تحولاً رقمياً شاملاً، تضمن تجهيز المدارس بالمعامل الذكية المتطورة، وربطها بشبكات الإنترنت عالية السرعة، وتوفير الأجهزة اللوحية والسبورات التفاعلية، وتدريب المعلمين على استخدام التكنولوجيا في العملية التعليمية.</p>
+              <p>كما تم تفعيل منظومة الامتحانات الإلكترونية والمنصات التعليمية الرقمية، وتوفير بنك معرفة رقمي للطلاب والمعلمين.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تجهيز 400 معمل حاسب آلي في المدارس الإعدادية والثانوية.</li>
+                <li>تركيب سبورات تفاعلية ذكية في جميع مدارس المرحلة الثانوية.</li>
+                <li>ربط 100% من المدارس بشبكة الإنترنت عالي السرعة.</li>
+                <li>تدريب 15 ألف معلم على استخدام التكنولوجيا في التعليم.</li>
+                <li>توزيع 25 ألف جهاز لوحي على الطلاب في المناطق الريفية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="معمل حاسب آلي"><i class="fas fa-desktop"></i><img src="images/معمل حاسب الي.jpg" alt="معمل حاسب آلي"></div>
+                <div class="mini-img" data-cap="سبورة تفاعلية ذكية"><i class="fas fa-tablet-screen-button"></i><img src="images/بسروات ذكية.jpg" alt="سبورة تفاعلية ذكية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-building"></i></div>
+            <div class="acc-title"><h3>مدرسة دناصور الإعدادية الجديدة</h3><p>مدرسة حديثة بمركز الشهداء مجهزة بأحدث الفصول والمعامل</p></div>
+            <span class="acc-badge">مشروع مميز</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>مدرسة دناصور الإعدادية الجديدة بمركز الشهداء تُعد نموذجاً متطوراً للمدارس الحديثة في محافظة المنوفية، حيث تم تجهيزها بأحدث الفصول الدراسية والمعامل العلمية، ومكتبة متطورة، وملاعب رياضية، ومرافق خدمية شاملة.</p>
+              <p>تم بناؤها وفق أحدث المعايير الهندسية والتعليمية، وتضم فصولاً ذكية مجهزة بالسبورات التفاعلية والأجهزة اللوحية، ومعامل للحاسب الآلي والعلوم، وقاعات للأنشطة الطلابية.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>بناء مدرسة جديدة بالكامل على مساحة واسعة بالقرية.</li>
+                <li>تجهيز 24 فصلاً دراسياً بأحدث المقاعد الذكية.</li>
+                <li>إنشاء معمل علوم ومعمل حاسب آلي ومكتبة حديثة.</li>
+                <li>إنشاء ملاعب رياضية وساحات للأنشطة.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="مبنى المدرسة"><i class="fas fa-school"></i><img src="images/مدرسة دناصور الإعدادية الجديدة.jpg" alt="مبنى المدرسة"></div>
+                <div class="mini-img" data-cap="الفصول الدراسية"><i class="fas fa-chalkboard"></i><img src="images/فصول مدرسة الشهيد سامح طاحون الابتدائية.jpg" alt="الفصول الدراسية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-book-open"></i></div>
+            <div class="acc-title"><h3>مدرسة الشهيد سامح طاحون الابتدائية</h3><p>ضمن قرية "شما" الحاصلة على شهادة القرية الخضراء</p></div>
+            <span class="acc-badge">قرية خضراء</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>مدرسة الشهيد سامح محمد طاحون الابتدائية بقرية "شما" بمركز الشهداء، وهي مدرسة نموذجية تم تطويرها بالكامل ضمن مشروعات المبادرة الرئاسية "حياة كريمة"، وحصلت القرية على شهادة "القرية الخضراء" كأول قرية في المنوفية.</p>
+              <p>المدرسة مجهزة بأحدث الوسائل التعليمية والمرافق الحديثة، وتضم فصولاً ذكية وحديقة ومكتبة وقاعات أنشطة.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تطوير شامل لمبنى المدرسة والمرافق الخدمية.</li>
+                <li>تجهيز الفصول بأحدث المقاعد والسبورات الذكية.</li>
+                <li>إنشاء حديقة مدرسية ضمن مبادرة القرية الخضراء.</li>
+                <li>تركيب ألواح طاقة شمسية لتغذية المدرسة بالكهرباء النظيفة.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="واجهة المدرسة"><i class="fas fa-school"></i><img src="images/واجهة مدرسة الشهيد سامح طاحلن الابتدائية.jpg" alt="واجهة المدرسة"></div>
+                <div class="mini-img" data-cap="الفصول"><i class="fas fa-chalkboard"></i><img src="images/فصول دراسية جديدة.jpg" alt="الفصول"></div>
+                <div class="mini-img" data-cap="الحديقة"><i class="fas fa-leaf"></i><img src="images/حديقة مدرسة الشهيد طاحون .jpg" alt="الحديقة"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-chalkboard-user"></i></div>
+            <div class="acc-title"><h3>تدريب المعلمين والأنشطة الطلابية</h3><p>برامج تدريبية متطورة للمعلمين وأنشطة طلابية شاملة</p></div>
+            <span class="acc-badge">15 ألف معلم</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>أولت محافظة المنوفية اهتماماً كبيراً بتدريب المعلمين وتطوير قدراتهم المهنية والتربوية، من خلال تنظيم برامج تدريبية متخصصة بالتعاون مع الأكاديمية المهنية للمعلمين والجامعات المصرية، شملت التدريب على استراتيجيات التدريس الحديثة، والتكنولوجيا التعليمية، وأساليب التقويم، وإدارة الفصول، والتعامل مع ذوي الاحتياجات الخاصة.</p>
+              <p>كما تم تفعيل الأنشطة الطلابية في مختلف المجالات (الرياضية، الثقافية، الفنية، العلمية، الاجتماعية)، وتنظيم المسابقات المحلية والقومية، ودعم الطلاب الموهوبين والمتفوقين.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تدريب 15 ألف معلم على استراتيجيات التدريس الحديثة.</li>
+                <li>تنظيم 200 دورة تدريبية في التكنولوجيا التعليمية.</li>
+                <li>تأهيل 500 معلم للتعامل مع ذوي الاحتياجات الخاصة.</li>
+                <li>إنشاء فرق طلابية للمسرح والموسيقى والكشافة.</li>
+                <li>حصول 40 طالباً على مراكز متقدمة في المسابقات القومية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="دورات تدريب المعلمين"><i class="fas fa-chalkboard-user"></i><img src="images/تدريب المعلمين.jpg" alt="دورات تدريب المعلمين"></div>
+                <div class="mini-img" data-cap="الأنشطة الطلابية"><i class="fas fa-futbol"></i><img src="images/انشطة طلابية.jpg" alt="الأنشطة الطلابية"></div>
+                <div class="mini-img" data-cap="معرض المشروعات"><i class="fas fa-lightbulb"></i><img src="images/معرض مشروعات.jpg" alt="معرض المشروعات"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HEALTH ===================== -->
+  <section class="view" id="view-health">
+    <div class="page-hero"><div class="ph-in">
+      <div class="ph-ic"><i class="fas fa-heart-pulse"></i></div>
+      <h1>قطاع الصحة</h1>
+      <p>+5 مليار جنيه استثمارات — مستشفيات جديدة ومبادرات رئاسية للرعاية الصحية الشاملة</p>
+    </div></div>
+
+    <div class="section">
+      <div class="sector-intro">
+        <h3><i class="fas fa-info-circle"></i> نبذة تفصيلية عن القطاع</h3>
+        <p>شهد قطاع الصحة في محافظة المنوفية تطويراً شاملاً خلال الفترة من 2019 إلى 2025، بإنفاق يتجاوز 5 مليارات جنيه، ضمن رؤية الدولة لتوفير رعاية صحية عالية الجودة لجميع المواطنين.</p>
+        <p>شمل التطوير إنشاء مستشفيات مركزية جديدة بأحدث الأجهزة الطبية، وتطوير المستشفيات والوحدات الصحية القائمة، وإطلاق المبادرات الرئاسية للكشف المبكر عن الأمراض، وتوفير العلاج بالمجان لغير القادرين.</p>
+        <div class="intro-stats">
+          <span class="intro-stat"><i class="fas fa-hospital"></i> مستشفيات جديدة</span>
+          <span class="intro-stat"><i class="fas fa-ribbon"></i> مركز الأورام</span>
+          <span class="intro-stat"><i class="fas fa-heart-pulse"></i> 100 مليون صحة</span>
+          <span class="intro-stat"><i class="fas fa-coins"></i> +5 مليار جنيه</span>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>اضغط على أي إنجاز لعرض تفاصيله</h2></div>
+      <div class="accordions">
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-hospital-alt"></i></div>
+            <div class="acc-title"><h3>مستشفى شبين الكوم الجديد</h3><p>مستشفى على مساحة 14 ألف متر مربع بأحدث الأجهزة الطبية</p></div>
+            <span class="acc-badge">14,000 م²</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>مستشفى شبين الكوم الجديد يُعد أحد أكبر المشروعات الصحية في محافظة المنوفية، حيث يمتد على مساحة 14 ألف متر مربع. المستشفى مجهز بأحدث الأجهزة الطبية والغرف القياسية وغرف العمليات المتطورة والرعاية المركزة والحضانات.</p>
+              <p>يضم أقساماً متكاملة تشمل الطوارئ والاستقبال والباطنة والجراحة والأطفال والنساء والتوليد والعظام والمسالك والأسنان والعلاج الطبيعي.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>مستشفى بسعة 300 سرير على مساحة 14 ألف متر مربع.</li>
+                <li>غرف عمليات متطورة مطابقة للمعايير العالمية.</li>
+                <li>وحدة رعاية مركزة وحضانات أطفال حديثة.</li>
+                <li>قسم طوارئ يعمل على مدار 24 ساعة.</li>
+                <li>قسم أشعة متكامل (أشعة مقطعية - رنين مغناطيسي - سونار).</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="المبنى الرئيسي"><i class="fas fa-hospital"></i><img src="images/بمستشفى شبين الكوم الجديد.jpg" alt="المبنى الرئيسي"></div>
+                <div class="mini-img" data-cap="جهاز الأشعة"><i class="fas fa-x-ray"></i><img src="images/بجهاز العلاج مركز المختار للاورام بالمنوفية.jpg" alt="جهاز الأشعة"></div>
+                <div class="mini-img" data-cap="الرعاية المركزة"><i class="fas fa-heartbeat"></i><img src="images/العناية المركزة.jpg" alt="الرعاية المركزة"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-hospital-symbol"></i></div>
+            <div class="acc-title"><h3>مستشفى الشهداء الجديد</h3><p>مستشفى على مساحة 21 ألف متر مربع يخدم مركز الشهداء</p></div>
+            <span class="acc-badge">21,000 م²</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>مستشفى الشهداء الجديد يمتد على مساحة 21 ألف متر مربع ويخدم مركز الشهداء والمراكز المجاورة بأقسام طبية شاملة تشمل الباطنة والجراحة والأطفال والنساء والتوليد والعظام والمسالك والأسنان، مع أقسام للطوارئ والحضانات والرعاية المركزة.</p>
+              <p>مجهز بأحدث الأجهزة الطبية والتشخيصية، وغرف عمليات مطابقة للمعايير العالمية، ومعمل مركزي، وبنك دم، وقسم للأشعة التشخيصية والعلاجية.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>مستشفى بسعة 200 سرير على مساحة 21 ألف متر مربع.</li>
+                <li>معمل مركزي وبنك دم متكامل.</li>
+                <li>قسم أشعة تشخيصية وعلاجية بأحدث الأجهزة.</li>
+                <li>وحدة غسيل كلوي بسعة 30 ماكينة.</li>
+                <li>حضانات أطفال حديثي الولادة بأحدث المواصفات.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="المبنى الخارجي"><i class="fas fa-hospital"></i><img src="images/مستشفي الشهداء.jpg" alt="المبنى الخارجي"></div>
+                <div class="mini-img" data-cap="الأجهزة الطبية"><i class="fas fa-stethoscope"></i><img src="images/الاجهزة الطبية بالشهداء.jpg" alt="الأجهزة الطبية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-clinic-medical"></i></div>
+            <div class="acc-title"><h3>وحدات ومراكز طب الأسرة</h3><p>تطوير وحدات طب الأسرة والمراكز الصحية بالقرى والمراكز</p></div>
+            <span class="acc-badge">وحدات متطورة</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>تم تطوير وإنشاء مجموعة من وحدات ومراكز طب الأسرة في مختلف مراكز المحافظة، من بينها وحدة طب أسرة النصر التي تم تجهيزها بأحدث الأجهزة الطبية وعيادات متخصصة في طب الأسرة والأطفال والباطنة والأسنان وتنظيم الأسرة والتطعيمات.</p>
+              <p>تقدم وحدات طب الأسرة خدمات الرعاية الصحية الأولية للمواطنين في نطاقها الجغرافي، وتعمل بنظام الملف الطبي الإلكتروني، وترتبط بمنظومة التحويل للمستشفيات العامة والمركزية.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تطوير 60 وحدة ومركز طب أسرة على مستوى المحافظة.</li>
+                <li>تجهيز وحدة طب أسرة النصر بأحدث الأجهزة والعيادات.</li>
+                <li>تفعيل الملف الطبي الإلكتروني في جميع الوحدات.</li>
+                <li>توفير خدمات تنظيم الأسرة والتطعيمات وصحة الأم والطفل.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="وحدة طب أسرة النصر"><i class="fas fa-clinic-medical"></i><img src="images/حدة طب أسرة النصر.jpg" alt="وحدة طب أسرة النصر"></div>
+                <div class="mini-img" data-cap="الأجهزة الطبية"><i class="fas fa-stethoscope"></i><img src="images/الاجهزة الطبية بالشهداء.jpg" alt="الأجهزة الطبية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-ribbon"></i></div>
+            <div class="acc-title"><h3>مركز المختار للأورام بالمنوفية</h3><p>أول مركز متخصص لعلاج الأورام باليود المشع 131</p></div>
+            <span class="acc-badge">مبادرة أهلية</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>مركز المختار للأورام هو أول مركز متخصص لعلاج الأورام باليود المشع 131 في محافظة المنوفية، وقد بُني بمبادرة أهلية كريمة من الحاجة انتصار غانم التي باعت أرضها وحليها لتحقيق وصية زوجها الراحل، ليقدم خدمات علاجية متقدمة لمرضى السرطان في المحافظة والمناطق المجاورة.</p>
+              <p>المركز مجهز بأحدث الأجهزة الطبية المتخصصة في تشخيص وعلاج الأورام، ويقدم خدماته بالمجان لغير القادرين.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>أول مركز متخصص لعلاج الأورام باليود المشع 131 بالمنوفية.</li>
+                <li>تجهيز بأحدث أجهزة الطب النووي والعلاج الإشعاعي.</li>
+                <li>تقديم الخدمات بالمجان لغير القادرين.</li>
+                <li>خدمة أكثر من 3000 مريض سنوياً من مختلف المحافظات.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="مبنى المركز"><i class="fas fa-hospital"></i><img src="images/مركز المختار للأورام بالمنوفية.jpg" alt="مبنى المركز"></div>
+                <div class="mini-img" data-cap="جهاز العلاج"><i class="fas fa-radiation"></i><img src="images/جهاز علاج المختار.jpg" alt="جهاز العلاج"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-heartbeat"></i></div>
+            <div class="acc-title"><h3>المبادرات الرئاسية للصحة</h3><p>100 مليون صحة، صحة المرأة، ورعاية كبار السن</p></div>
+            <span class="acc-badge">100 مليون صحة</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>نُفذت في محافظة المنوفية حزمة من المبادرات الرئاسية الصحية شملت مبادرة "100 مليون صحة" للكشف عن فيروس سي والأمراض المزمنة، ومبادرة صحة المرأة المصرية للكشف المبكر عن أورام الثدي، ومبادرة رعاية كبار السن، ومبادرة دعم صحة الأم والجنين، ومبادرة الكشف عن الأنيميا والسمنة والتقزم لطلاب المدارس.</p>
+              <p>استفاد من هذه المبادرات ملايين المواطنين في المحافظة، وساهمت في تحسين المؤشرات الصحية العامة وتقليل معدلات الإصابة بالأمراض المزمنة.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>مبادرة "100 مليون صحة" — فحص أكثر من 1.5 مليون مواطن.</li>
+                <li>مبادرة صحة المرأة المصرية — الكشف المبكر عن أورام الثدي.</li>
+                <li>مبادرة رعاية كبار السن — خدمات صحية شاملة لكبار السن.</li>
+                <li>مبادرة دعم صحة الأم والجنين — متابعة 100 ألف حالة حمل.</li>
+                <li>تجهيز 40 عيادة متنقلة لتغطية القرى النائية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="حملة 100 مليون صحة"><i class="fas fa-heart-pulse"></i><img src="images/حملة  100مليون صحة.jpg" alt="حملة 100 مليون صحة"></div>
+                <div class="mini-img" data-cap="وحدة طب الأسرة"><i class="fas fa-clinic-medical"></i><img src="images/حدة طب أسرة النصر.jpg" alt="وحدة طب الأسرة"></div>
+                <div class="mini-img" data-cap="الفحوصات المجانية"><i class="fas fa-notes-medical"></i><img src="images/الفحوصات المجانية.jpg" alt="الفحوصات المجانية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-ambulance"></i></div>
+            <div class="acc-title"><h3>منظومة الإسعاف والطوارئ</h3><p>تطوير منظومة الإسعاف وتزويدها بأحدث السيارات والأجهزة</p></div>
+            <span class="acc-badge">طوارئ 24/7</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>شهدت منظومة الإسعاف والطوارئ في محافظة المنوفية تطويراً شاملاً خلال السنوات الأخيرة، شمل تحديث أسطول سيارات الإسعاف وتزويدها بأحدث الأجهزة الطبية وأجهزة الاتصال والـ GPS، وتدريب المسعفين على أحدث بروتوكولات الإنعاش والإسعافات الأولية، وتطبيق نظام الاستجابة السريعة للحوادث والطوارئ.</p>
+              <p>كما تم ربط نقاط الإسعاف بغرفة عمليات مركزية تعمل على مدار 24 ساعة، لتلقي البلاغات وتوجيه سيارات الإسعاف بأسرع طريقة ممكنة، وتنسيق التحويل بين المستشفيات.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تزويد المحافظة بـ 50 سيارة إسعاف جديدة مجهزة بالكامل.</li>
+                <li>تطبيق نظام GPS لتتبع سيارات الإسعاف وتوجيهها.</li>
+                <li>إنشاء غرفة عمليات مركزية تعمل 24 ساعة.</li>
+                <li>تدريب 300 مسعف على أحدث بروتوكولات الإنقاذ.</li>
+                <li>تقليل زمن الاستجابة إلى أقل من 8 دقائق في المناطق الحضرية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-chart-line"></i> الأثر والنتائج</h4>
+              <div class="info-box">
+                <p>ارتفاع معدلات الاستجابة للحوادث إلى <strong>95%</strong>، وانخفاض زمن الاستجابة بنسبة <strong>40%</strong>، وإنقاذ أكثر من <strong>12 ألف حالة حرجة</strong> سنوياً.</p>
+              </div>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="سيارات الإسعاف الجديدة"><i class="fas fa-ambulance"></i><img src="images/اسعاف حديثة.jpg" alt="سيارات الإسعاف الجديدة"></div>
+                <div class="mini-img" data-cap="غرفة عمليات الطوارئ"><i class="fas fa-headset"></i><img src="images/غرفة عمليات.jpg" alt="غرفة عمليات الطوارئ"></div>
+                <div class="mini-img" data-cap="أجهزة الإسعاف الحديثة"><i class="fas fa-briefcase-medical"></i><img src="images/اجهزة اسعاف.jpg" alt="أجهزة الإسعاف الحديثة"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WATER ===================== -->
+  <section class="view" id="view-water">
+    <div class="page-hero"><div class="ph-in">
+      <div class="ph-ic"><i class="fas fa-droplet"></i></div>
+      <h1>قطاع مياه الشرب والصرف الصحي</h1>
+      <p>5.7 مليار جنيه — تغطية 98% للمياه و100% للصرف في المدن</p>
+    </div></div>
+
+    <div class="section">
+      <div class="sector-intro">
+        <h3><i class="fas fa-info-circle"></i> نبذة تفصيلية عن القطاع</h3>
+        <p>استثمرت الدولة أكثر من 5.7 مليار جنيه في قطاع مياه الشرب والصرف الصحي بمحافظة المنوفية، شملت إنشاء محطات مياه جديدة، وبرامج إحلال وتجديد الشبكات، ومحطات معالجة الصرف الصحي، وتوصيل الخدمة للقرى المحرومة، في إطار المبادرة الرئاسية "حياة كريمة".</p>
+        <p>أسهمت هذه المشروعات في توفير مياه شرب نظيفة وآمنة لجميع المواطنين على مدار الساعة، وتغطية شاملة لخدمات الصرف الصحي، والقضاء على مشكلة طفح المجاري، وتحسين البيئة الصحية للسكان.</p>
+        <div class="intro-stats">
+          <span class="intro-stat"><i class="fas fa-tint"></i> 98% تغطية مياه</span>
+          <span class="intro-stat"><i class="fas fa-water"></i> 100% صرف بالمدن</span>
+          <span class="intro-stat"><i class="fas fa-industry"></i> 24 محطة مياه</span>
+          <span class="intro-stat"><i class="fas fa-coins"></i> 5.7 مليار جنيه</span>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>اضغط على أي إنجاز لعرض تفاصيله</h2></div>
+      <div class="accordions">
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-tint"></i></div>
+            <div class="acc-title"><h3>محطات مياه الشرب</h3><p>إنشاء 24 محطة مياه، 17 برجاً وخزاناً، و35 محطة إزالة حديد ومنجنيز</p></div>
+            <span class="acc-badge">98% تغطية</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>تم إنشاء وتطوير منظومة متكاملة لمياه الشرب في محافظة المنوفية شملت بناء 24 محطة مياه شرب جديدة، و17 برجاً وخزاناً لتخزين المياه، و35 محطة إزالة حديد ومنجنيز لتحسين جودة المياه. وصلت نسبة تغطية خدمات مياه الشرب في المحافظة إلى 98%.</p>
+              <p>أسهمت هذه المشروعات في توفير مياه نظيفة وآمنة لجميع المواطنين على مدار الساعة، والقضاء على مشكلة انقطاع المياه في فصل الصيف.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>إنشاء 24 محطة مياه شرب جديدة بأحدث التقنيات.</li>
+                <li>إنشاء 17 برجاً وخزاناً لتخزين المياه.</li>
+                <li>إنشاء 35 محطة إزالة حديد ومنجنيز.</li>
+                <li>تحديث 800 كم من شبكات التوزيع الرئيسية والفرعية.</li>
+                <li>الوصول إلى تغطية 98% من السكان بخدمات مياه الشرب.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="محطة مياه حديثة"><i class="fas fa-industry"></i><img src="images/محطة مياة حديثة.jpg" alt="محطة مياه حديثة"></div>
+                <div class="mini-img" data-cap="برج مياه"><i class="fas fa-water"></i><img src="images/برج مياة.jpg" alt="برج مياه"></div>
+                <div class="mini-img" data-cap="خزان أرضي"><i class="fas fa-database"></i><img src="images/خزان ارضي.jpg" alt="خزان أرضي"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-water"></i></div>
+            <div class="acc-title"><h3>محطات الصرف الصحي</h3><p>13 محطة معالجة، 53 محطة رفع، وتوصيل الخدمة لـ80 قرية</p></div>
+            <span class="acc-badge">100% بالمدن</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>شهد قطاع الصرف الصحي بالمنوفية طفرة كبيرة شملت إنشاء وتوسعة 13 محطة معالجة، وإنشاء 53 محطة رفع، وتمديد شبكات الصرف الصحي لتشمل 80 قرية جديدة. وصلت نسبة تغطية الصرف الصحي في المدن إلى 100%، بينما بلغت في القرى نحو 70%.</p>
+              <p>أسهمت هذه المشروعات في تحسين البيئة الصحية للمواطنين، والقضاء على مشكلة طفح المجاري، والحفاظ على الموارد المائية من التلوث.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>إنشاء وتوسعة 13 محطة معالجة لمياه الصرف الصحي.</li>
+                <li>إنشاء 53 محطة رفع بأحدث التقنيات.</li>
+                <li>توصيل خدمة الصرف الصحي لـ80 قرية جديدة.</li>
+                <li>مدّ 1,200 كم من شبكات الصرف الصحي الجديدة.</li>
+                <li>إعادة استخدام مياه الصرف المعالجة في الري.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="محطة معالجة"><i class="fas fa-water"></i><img src="images/محطات معالجة ميياة الصرف الصحي.jpg" alt="محطة معالجة"></div>
+                <div class="mini-img" data-cap="محطة رفع"><i class="fas fa-arrow-up"></i><img src="images/محطة رفع ميياة الصرف الصحي.jpg" alt="محطة رفع"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-sync-alt"></i></div>
+            <div class="acc-title"><h3>إحلال وتجديد الشبكات</h3><p>تحديث شبكات المياه والصرف وتقليل الفاقد وتحسين كفاءة الخدمة</p></div>
+            <span class="acc-badge">800 كم شبكات</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>نفذت الدولة برنامجاً متكاملاً لإحلال وتجديد شبكات مياه الشرب والصرف الصحي في محافظة المنوفية، شمل استبدال الشبكات القديمة المتهالكة بأخرى جديدة من مواد عالية الجودة، وتركيب عدادات مياه مسبوقة الدفع، وتطبيق نظم التحكم الآلي في المحابس والوحدات، وتحديث وحدات الصيانة والطوارئ.</p>
+              <p>أسهم هذا البرنامج في تقليل الفاقد من مياه الشرب إلى أقل من 15%، وتحسين الضغوط في الشبكات، والقضاء على مشكلة انقطاع المياه المتكرر، ورفع كفاءة الخدمة المقدمة للمواطنين في جميع مراكز المحافظة.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>استبدال 800 كم من شبكات المياه القديمة بشبكات جديدة.</li>
+                <li>تركيب 200 ألف عداد مياه مسبوق الدفع.</li>
+                <li>تطبيق نظم التحكم الآلي في المحابس الرئيسية.</li>
+                <li>تحديث وحدات الصيانة والطوارئ في جميع المراكز.</li>
+                <li>تقليل الفاقد من المياه إلى أقل من 15%.</li>
+                <li>رفع كفاءة ضغوط الشبكة وتحسين جودة الخدمة.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-chart-line"></i> الأثر والنتائج</h4>
+              <div class="info-box">
+                <p>توفير أكثر من <strong>30%</strong> من المياه المهدرة، وتحسين استمرارية الخدمة إلى <strong>98%</strong>، وانخفاض شكاوى المواطنين بنسبة <strong>65%</strong>.</p>
+              </div>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="شبكات مياه جديدة"><i class="fas fa-network-wired"></i><img src="images/شبكة مياه جديدة.jpg" alt="شبكات مياه جديدة"></div>
+                <div class="mini-img" data-cap="أعمال التجديد"><i class="fas fa-tools"></i><img src="images/اعمال تحديد المية.jpg" alt="أعمال التجديد"></div>
+                <div class="mini-img" data-cap="عدادات مسبقة الدفع"><i class="fas fa-tachometer-alt"></i><img src="images/عداد مسبق الدفع.jpg" alt="عدادات مسبقة الدفع"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ROADS ===================== -->
+  <section class="view" id="view-roads">
+    <div class="page-hero"><div class="ph-in">
+      <div class="ph-ic"><i class="fas fa-road"></i></div>
+      <h1>قطاع الطرق والنقل</h1>
+      <p>استثمارات تتجاوز 2 مليار جنيه — 400 كم طرق مرصوفة ومحاور جديدة</p>
+    </div></div>
+
+    <div class="section">
+      <div class="sector-intro">
+        <h3><i class="fas fa-info-circle"></i> نبذة تفصيلية عن القطاع</h3>
+        <p>شهد قطاع الطرق والنقل في محافظة المنوفية تطوراً كبيراً خلال السنوات الأخيرة، باستثمارات تتجاوز 2 مليار جنيه، شملت رصف وتطوير الطرق المحلية والداخلية، وإنشاء محاور مرورية جديدة، وتطوير الكباري والأنفاق، وتحديث شبكة النقل العام.</p>
+        <p>أسهمت هذه المشروعات في ربط مراكز المحافظة ببعضها وبالمحافظات المجاورة، وتقليل زمن الرحلات، وتحسين جودة الحياة للمواطنين، ودعم الحركة الاقتصادية والاستثمارية في المحافظة.</p>
+        <div class="intro-stats">
+          <span class="intro-stat"><i class="fas fa-road"></i> 400+ كم طرق</span>
+          <span class="intro-stat"><i class="fas fa-bridge"></i> كباري جديدة</span>
+          <span class="intro-stat"><i class="fas fa-coins"></i> 2 مليار جنيه</span>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>اضغط على أي إنجاز لعرض تفاصيله</h2></div>
+      <div class="accordions">
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-road"></i></div>
+            <div class="acc-title"><h3>مشروعات الطرق والكباري</h3><p>رصف وتطوير أكثر من 400 كم من الطرق المحلية وإنشاء محاور جديدة</p></div>
+            <span class="acc-badge">400+ كم</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>استثمارات تتجاوز 2 مليار جنيه في قطاع الطرق والنقل، تضمنت رصف وتطوير أكثر من 400 كم من الطرق المحلية والداخلية في جميع مراكز ومدن المحافظة، وإنشاء محاور مرورية جديدة، وتطوير الكباري والأنفاق، وتحسين شبكة النقل العام داخل المحافظة وربطها بالمحافظات المجاورة.</p>
+              <p>كما شملت المشروعات إنشاء الطرق الدائرية والمداخل الرئيسية للمدن، وتحديث أنظمة الإشارات المرورية، مما أسهم في تسهيل حركة المواطنين والبضائع وتقليل الازدحام المروري وتحسين مستوى السلامة على الطرق.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>رصف وتطوير 400 كم من الطرق المحلية والداخلية.</li>
+                <li>إنشاء محاور مرورية جديدة لربط المراكز ببعضها.</li>
+                <li>تطوير الكباري والأنفاق على الطرق الرئيسية.</li>
+                <li>تحديث أنظمة الإشارات المرورية واللوحات الإرشادية.</li>
+                <li>إنشاء طرق دائرية ومداخل جديدة للمدن.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="الطرق الجديدة"><i class="fas fa-road"></i><img src="images/طرق جديدة.jpg" alt="الطرق الجديدة"></div>
+                <div class="mini-img" data-cap="محاور مرورية"><i class="fas fa-route"></i><img src="images/المحور الجديد.jpg" alt="محاور مرورية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-bus"></i></div>
+            <div class="acc-title"><h3>تطوير شبكة النقل العام</h3><p>تحديث أسطول النقل العام وإنشاء مواقف حديثة وتطوير الخدمة</p></div>
+            <span class="acc-badge">نقل حديث</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>شهدت شبكة النقل العام في محافظة المنوفية تطويراً شاملاً، تضمن تحديث أسطول الأتوبيسات بإضافة أتوبيسات جديدة تعمل بالغاز الطبيعي صديقة للبيئة، وإنشاء وتطوير المواقف الرئيسية بأحدث المعايير، وتطبيق نظم إدارة الأسطول الإلكترونية، وتوفير خدمة نقل متميزة للمواطنين بأسعار مناسبة.</p>
+              <p>كما تم تطوير خطوط سير جديدة تربط المراكز والقرى ببعضها وبالمحافظات المجاورة، وتوفير مواقف مجهزة بخدمات متكاملة (دورات مياه - كافتيريا - غرف انتظار مكيفة)، وتطبيق نظام التتبع الإلكتروني للأتوبيسات.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تحديث أسطول النقل بإضافة 200 أتوبيس جديد.</li>
+                <li>تشغيل أتوبيسات تعمل بالغاز الطبيعي صديقة للبيئة.</li>
+                <li>إنشاء وتطوير 15 موقفاً رئيسياً بمعايير حديثة.</li>
+                <li>تطبيق نظام التتبع الإلكتروني للأتوبيسات.</li>
+                <li>تشغيل خطوط سير جديدة لربط القرى والمراكز.</li>
+                <li>توفير خدمة نقل مكيفة للمواطنين بأسعار مناسبة.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="أتوبيسات حديثة"><i class="fas fa-bus"></i><img src="images/اتوبيسات حديثة.jpg" alt="أتوبيسات حديثة"></div>
+                <div class="mini-img" data-cap="موقف نقل جديد"><i class="fas fa-building"></i><img src="images/موقف نقل.jpg" alt="موقف نقل جديد"></div>
+                <div class="mini-img" data-cap="شبكة النقل"><i class="fas fa-route"></i><img src="images/شبكة نقل.jpg" alt="شبكة النقل"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AGRI ===================== -->
+  <section class="view" id="view-agri">
+    <div class="page-hero"><div class="ph-in">
+      <div class="ph-ic"><i class="fas fa-seedling"></i></div>
+      <h1>قطاع الزراعة</h1>
+      <p>المركز الأول على مستوى الجمهورية في إنتاجية القمح للموسم 2025/2026</p>
+    </div></div>
+
+    <div class="section">
+      <div class="sector-intro">
+        <h3><i class="fas fa-info-circle"></i> نبذة تفصيلية عن القطاع</h3>
+        <p>تُعد محافظة المنوفية من أعرق المحافظات الزراعية في مصر، وتتميز بأراضيها الخصبة وموقعها المتميز في قلب الدلتا. شهد القطاع الزراعي بالمحافظة خلال السنوات الأخيرة تطوراً كبيراً، بفضل تطبيق أحدث الأساليب الزراعية، وتوفير التقاوي المعتمدة والميكنة الزراعية، وتطوير نظم الري الحقلي، ودعم صغار المزارعين.</p>
+        <p>حققت المحافظة المركز الأول على مستوى الجمهورية في إنتاجية القمح للموسم الزراعي 2025/2026، وهو إنجاز يعكس الجهود المبذولة في تطوير القطاع الزراعي.</p>
+        <div class="intro-stats">
+          <span class="intro-stat"><i class="fas fa-trophy"></i> الأولى جمهورياً</span>
+          <span class="intro-stat"><i class="fas fa-wheat-awn"></i> القمح</span>
+          <span class="intro-stat"><i class="fas fa-fish"></i> الاستزراع السمكي</span>
+        </div>
+      </div>
+
+      <div class="sec-head"><h2>اضغط على أي إنجاز لعرض تفاصيله</h2></div>
+      <div class="accordions">
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-trophy"></i></div>
+            <div class="acc-title"><h3>إنتاجية القمح — الأولى جمهورياً</h3><p>تحقيق المركز الأول على مستوى الجمهورية في إنتاجية القمح</p></div>
+            <span class="acc-badge">المركز الأول</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>حققت محافظة المنوفية المركز الأول على مستوى الجمهورية في إنتاجية القمح للموسم الزراعي 2025/2026، بفضل تطبيق أحدث الأساليب الزراعية، وتوفير التقاوي المعتمدة والميكنة الزراعية، وتطوير نظم الري الحقلي، ودعم صغار المزارعين.</p>
+              <p>وقد بلغ متوسط إنتاجية الفدان من القمح في المنوفية 7.5 طن للهكتار، وهو من أعلى المعدلات على مستوى الجمهورية، بفضل استخدام التقاوي عالية الجودة والإرشاد الزراعي المكثف والتطبيق الأمثل للعمليات الزراعية.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>تحقيق المركز الأول جمهورياً في إنتاجية القمح (7.5 طن/هكتار).</li>
+                <li>توفير التقاوي المعتمدة عالية الجودة للمزارعين.</li>
+                <li>تطوير نظم الري الحقلي الحديثة لتوفير المياه.</li>
+                <li>دعم المزارعين بالميكنة الزراعية الحديثة.</li>
+                <li>تقديم قروض ميسرة لأكثر من 5000 مزارع.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="حقول القمح"><i class="fas fa-wheat-awn"></i><img src="images/حقول قمح.jpg" alt="حقول القمح"></div>
+                <div class="mini-img" data-cap="حصاد القمح"><i class="fas fa-tractor"></i><img src="images/حصاد قمح.jpg" alt="حصاد القمح"></div>
+                <div class="mini-img" data-cap="التقاوي المعتمدة"><i class="fas fa-seedling"></i><img src="images/تقاوي القمح.jpg" alt="التقاوي المعتمدة"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-fish"></i></div>
+            <div class="acc-title"><h3>الاستزراع السمكي والثروة الحيوانية</h3><p>مشروعات الاستزراع السمكي وتطوير الثروة الحيوانية والداجنة</p></div>
+            <span class="acc-badge">إنتاج متطور</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>شهد قطاع الثروة السمكية والحيوانية في المنوفية تطوراً كبيراً، من خلال إنشاء مزارع للاستزراع السمكي بأحدث التقنيات، وتطوير أسواق الأسماك، وتحسين سلالات الثروة الحيوانية، وتقديم الدعم الفني والبيطري للمربين.</p>
+              <p>تسهم هذه المشروعات في توفير البروتين الحيواني والسمكي عالي الجودة بأسعار مناسبة للمواطنين، ودعم الأمن الغذائي، وزيادة دخل المربين والمزارعين.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>إنشاء مزارع استزراع سمكي حديثة بإنتاج وفير.</li>
+                <li>تطوير أسواق الأسماك وتنظيم عمليات البيع.</li>
+                <li>تحسين سلالات الثروة الحيوانية وتقديم اللقاحات.</li>
+                <li>توفير الرعاية البيطرية المجانية للمربين.</li>
+                <li>دعم صغار المربين بالقروض الميسرة.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="الاستزراع السمكي"><i class="fas fa-fish"></i><img src="images/مفرخ سمكي.jpg" alt="الاستزراع السمكي"></div>
+                <div class="mini-img" data-cap="سوق الأسماك"><i class="fas fa-store"></i><img src="images/سوق سمك.jpg" alt="سوق الأسماك"></div>
+                <div class="mini-img" data-cap="الثروة الحيوانية"><i class="fas fa-cow"></i><img src="images/الحيوانية.jpg" alt="الثروة الحيوانية"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="acc" onclick="toggleAcc(event,this)">
+          <div class="acc-head">
+            <div class="acc-ic"><i class="fas fa-warehouse"></i></div>
+            <div class="acc-title"><h3>الصوب الزراعية الحديثة</h3><p>إنشاء 300 صوبة زراعية حديثة لزيادة الإنتاج وترشيد المياه</p></div>
+            <span class="acc-badge">300 صوبة</span>
+            <div class="acc-chev"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="acc-body"><div class="acc-content">
+            <div class="acc-block">
+              <h4><i class="fas fa-circle-info"></i> تفاصيل الإنجاز</h4>
+              <p>نفذت محافظة المنوفية مشروعاً طموحاً لإنشاء الصوب الزراعية الحديثة، بهدف زيادة الإنتاج الزراعي وترشيد استهلاك المياه، وتوفير محاصيل عالية الجودة على مدار العام، وتقليل الاعتماد على الاستيراد. تم إنشاء 300 صوبة زراعية موزعة على مراكز المحافظة، تعمل بتقنيات الري الحديثة (الري بالتنقيط) وأنظمة التحكم في المناخ.</p>
+              <p>تسهم الصوب الزراعية في مضاعفة إنتاجية الفدان من 3 إلى 5 أضعاف مقارنة بالزراعة التقليدية، وتوفير أكثر من 60% من مياه الري، وإنتاج محاصيل خالية من الآفات والأمراض، وتوفير فرص عمل للشباب والمرأة الريفية.</p>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-star"></i> أبرز ما تم تنفيذه</h4>
+              <ul>
+                <li>إنشاء 300 صوبة زراعية حديثة على مستوى المحافظة.</li>
+                <li>تشغيل الصوب بتقنيات الري الحديثة (الري بالتنقيط).</li>
+                <li>تركيب أنظمة تحكم في المناخ والرطوبة والحرارة.</li>
+                <li>إنتاج محاصيل عالية الجودة على مدار العام.</li>
+                <li>توفير أكثر من 60% من مياه الري.</li>
+                <li>توفير فرص عمل للشباب والمرأة الريفية.</li>
+              </ul>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-chart-line"></i> الأثر والنتائج</h4>
+              <div class="info-box">
+                <p>مضاعفة إنتاجية الفدان <strong>3-5 أضعاف</strong>، وتوفير <strong>60%</strong> من المياه، وتوفير أكثر من <strong>1500 فرصة عمل</strong> مباشرة في القطاع الزراعي.</p>
+              </div>
+            </div>
+            <div class="acc-block">
+              <h4><i class="fas fa-images"></i> الصور</h4>
+              <div class="mini-gallery">
+                <div class="mini-img" data-cap="الصوب الزراعية"><i class="fas fa-warehouse"></i><img src="images/صوبة زراعية.jpg" alt="الصوب الزراعية"></div>
+                <div class="mini-img" data-cap="محاصيل الصوب"><i class="fas fa-carrot"></i><img src="images/محصول الصوب.jpg" alt="محاصيل الصوب"></div>
+                <div class="mini-img" data-cap="الري الحديث"><i class="fas fa-tint"></i><img src="images/الري الحديث.jpg" alt="الري الحديث"></div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="ft-t">إنجازات محافظة المنوفية</p>
+    <p>مسابقة "إنجازات بلدي" — إدارة تنمية مادة الكمبيوتر التعليمي</p>
+    <p>العام الدراسي 2025 - 2026</p>
+    <p class="copy">  اعداد الطالب / مؤمن علاء الدين سليم - الصف الثاني الاعدادي - مدرسة ميت مسعود الاعدادية -مركز شبين الكوم-  محافظة المنوفية </p>
+  </footer>
+</div>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+// ============ ENTER SITE ============
+function enterSite(){
+  document.getElementById('landing').classList.add('hide');
+  setTimeout(function(){
+    document.getElementById('landing').style.display='none';
+    document.getElementById('app').classList.add('show');
+    window.scrollTo({top:0,behavior:'instant'});
+    startVideo();
+  },800);
+}
+
+// ============ VIEW SWITCHER ============
+function showView(id){
+  document.querySelectorAll('.view').forEach(function(v){v.classList.remove('active');});
+  var target = document.getElementById('view-'+id);
+  if(target) target.classList.add('active');
+  document.querySelectorAll('.tab').forEach(function(t){
+    t.classList.toggle('active', t.dataset.view===id);
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ============ ACCORDION ============
+function toggleAcc(e, el){
+  if(e.target.closest('a')||e.target.closest('iframe')) return;
+  var isOpen = el.classList.contains('open');
+  el.parentElement.querySelectorAll('.acc.open').forEach(function(a){a.classList.remove('open');});
+  if(!isOpen) el.classList.add('open');
+}
+
+// ============ SCROLL TOP ============
+window.addEventListener('scroll', function(){
+  var btn = document.getElementById('scrollTop');
+  if(window.scrollY > 400) btn.classList.add('show');
+  else btn.classList.remove('show');
+});
+
+
+</script>
+</body>
+</html>
